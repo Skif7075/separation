@@ -4,13 +4,14 @@
 #include "WordOperations.h"
 #include "PermutationOperations.h"
 #include <iostream>
-#include <time.h>
+#include "Timer.h"
 
 using namespace std;
 
 void palindromeAlgorithm(int k, Permutation ***automata, int automataCount)
 {
-	int seconds1 = time(NULL);
+	Timer timer;
+	timer.start();
 	int maxLength = lcm(k);
 	for (int curLength = 2; curLength <= maxLength; curLength++)
 	{
@@ -77,11 +78,10 @@ void palindromeAlgorithm(int k, Permutation ***automata, int automataCount)
 				}
 				if (!areDifferent)
 				{
-					int seconds2 = time(NULL);
 					printWord(curWord, curLength);
 					cout << '=';
 					printWord(right, curLength);
-					cout << "   in " << (seconds2 - seconds1) << " seconds";
+					cout << "   in " << timer.getCurSeconds()<< " seconds";
 					cout << endl;
 					return;
 				}

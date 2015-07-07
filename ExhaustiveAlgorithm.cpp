@@ -4,20 +4,20 @@
 #include "List.h"
 #include "PermutationOperations.h"
 #include <iostream>
-#include <time.h>
+#include "Timer.h"
 
 using namespace std;
 
 void exhaustiveAlgorithm(int k, Permutation***automata, int automataCount)
 {
-	int seconds1 = time(NULL);
+	Timer timer;
+	timer.start();
 	int maxLength = lcm(k);
 
 	for (int curLength = 2; curLength <= maxLength; curLength++)
 	{
 		cout << endl << "Length " << curLength << endl;
-		int seconds3 = time(NULL);
-		cout << seconds3 - seconds1 << endl;
+		cout << timer.getCurSeconds()<< endl;
 		int *curWord = new int[curLength];
 		for (int i = 0; i < curLength; i++)
 		{
@@ -72,13 +72,12 @@ void exhaustiveAlgorithm(int k, Permutation***automata, int automataCount)
 					}
 					if (!areDifferent)
 					{
-						int seconds2 = time(NULL);
 						for (int i = 0; i < curLength; i++)
 							cout << words[newWordInd][i];
 						cout << '=';
 						for (int i = 0; i < curLength; i++)
 							cout << words[prevWordInd][i];
-						cout << "   in " << (seconds2 - seconds1) << " seconds";
+						cout << "   in " << timer.getCurSeconds() << " seconds";
 						cout << endl;
 					}
 				}

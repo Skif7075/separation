@@ -18,6 +18,7 @@
     <ClCompile Include="Permutation.cpp" />
     <ClCompile Include="PermutationOperations.cpp" />
     <ClCompile Include="Program.cpp" />
+    <ClCompile Include="Timer.cpp" />
     <ClCompile Include="WordOperations.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -27,6 +28,7 @@
     <ClInclude Include="PalindromeAlgorithm.h" />
     <ClInclude Include="Permutation.h" />
     <ClInclude Include="PermutationOperations.h" />
+    <ClInclude Include="Timer.h" />
     <ClInclude Include="WordOperations.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
