@@ -1,23 +1,8 @@
-﻿Build started 07.07.2015 21:45:19.
+﻿Build started 07.07.2015 23:02:39.
      1>Project "E:\Dropbox\Separation main\Separation\separation.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         E:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Calculations.cpp ExhaustiveAlgorithm.cpp List.cpp PalindromeAlgorithm.cpp Permutation.cpp PermutationOperations.cpp Program.cpp WordOperations.cpp
-         WordOperations.cpp
-     1>e:\dropbox\separation main\separation\wordoperations.cpp(20): warning C4554: '<<' : check operator precedence for possible error; use parentheses to clarify precedence
+         E:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Program.cpp
          Program.cpp
-         PermutationOperations.cpp
-         Permutation.cpp
-         PalindromeAlgorithm.cpp
-     1>e:\dropbox\separation main\separation\palindromealgorithm.cpp(13): warning C4244: 'initializing' : conversion from 'time_t' to 'int', possible loss of data
-     1>e:\dropbox\separation main\separation\palindromealgorithm.cpp(80): warning C4244: 'initializing' : conversion from 'time_t' to 'int', possible loss of data
-         List.cpp
-         ExhaustiveAlgorithm.cpp
-     1>e:\dropbox\separation main\separation\exhaustivealgorithm.cpp(13): warning C4244: 'initializing' : conversion from 'time_t' to 'int', possible loss of data
-     1>e:\dropbox\separation main\separation\exhaustivealgorithm.cpp(19): warning C4244: 'initializing' : conversion from 'time_t' to 'int', possible loss of data
-     1>e:\dropbox\separation main\separation\exhaustivealgorithm.cpp(75): warning C4244: 'initializing' : conversion from 'time_t' to 'int', possible loss of data
-         Calculations.cpp
-         Generating Code...
-     1>cl : Command line warning D9028: minimal rebuild failure, reverting to normal build
        Link:
          E:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Dropbox\Separation main\Separation\Debug\separation.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Dropbox\Separation main\Separation\Debug\separation.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Dropbox\Separation main\Separation\Debug\separation.lib" /MACHINE:X86 Debug\Calculations.obj
          Debug\ExhaustiveAlgorithm.obj
@@ -32,4 +17,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.13
+Time Elapsed 00:00:01.14
