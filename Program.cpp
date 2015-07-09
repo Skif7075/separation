@@ -31,6 +31,9 @@ Permutation*** generateAutomata(int k,int permutationCount)
 
 void main()
 {
+	/*cout << 39 / 2;
+	system("pause");
+	return;*/
 	cout << "Input k: ";
 	int k;
 	cin >> k;
@@ -38,7 +41,10 @@ void main()
 	Permutation*** automata = generateAutomata(k, permutationCount);
 	int automataCount = permutationCount * permutationCount;
 	if (k < 5)
-		exhaustiveAlgorithm(k, automata, automataCount);
+	{
+		ExhaustiveAlgorithm algo;
+		algo.run(k, automata, automataCount);
+	}
 	else
 		palindromeAlgorithm(k, automata, automataCount);
 	system("pause");
