@@ -31,9 +31,6 @@ Permutation*** generateAutomata(int k,int permutationCount)
 
 void main()
 {
-	/*cout << 39 / 2;
-	system("pause");
-	return;*/
 	cout << "Input k: ";
 	int k;
 	cin >> k;
